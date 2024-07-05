@@ -3,113 +3,95 @@
 
 ## Oracle Next Education e Alura Latam
 
-### Exercícios propostos durante o Módulo: Documentação e HTML
+### Exercícios propostos durante o Módulo: Layout e tags semânticas
 
-1) Construindo a estrutura básica do HTML
-Você acabou de iniciar um estágio em uma empresa de desenvolvimento web e sua primeira tarefa é criar um documento HTML básico para um novo projeto. O objetivo é construir a estrutura fundamental de um arquivo HTML, incluindo as tags essenciais: ```<!DOCTYPE html>```, ```<html>```, ```<head>```, e ```<body>```. Além disso, dentro da tag <head>, adicione uma tag ```<title>``` com um título de sua escolha para a página. Lembre-se de seguir as práticas de indentação corretas para manter o código organizado.
-
-```ruby
-<!DOCTYPE html>
-<html>
+1) Construindo a estrutura HTML do portfólio
+Você acaba de receber um layout de uma página de portfólio da sua designer. O desafio é transformar esse design em uma página web funcional. Utilizando HTML, crie a estrutura básica da página. Lembre-se de incluir os elementos principais: um título principal, um subtítulo, dois botões (Instagram e Github), e um espaço para a imagem da desenvolvedora. Sinta-se livre para personalizar o texto e a imagem para adaptá-los ao seu portfólio pessoal.
+    ```ruby
+    <!DOCTYPE html>
     <head>
-        <title>Desenvolvimento Web</title>
+        <title>Portfolio do Flavio Santana<title>
     </head>
     <body>
-
+        <h1>Portfolio do Flavio Santana</strong></h1>
+        <p>Olá! Sou Flávio Santana, desenvolvedor Front-end</p>
+        <button>LinkedIn</button>
+        <abutton>GitHub<button>
+        <img src="imagem.png" alt="Foto no estilo selfie do Flávio Santana">
     </body>
-</html>
-```
+    </html>
+    ```
 
-2) Adicionando conteúdo ao HTML
-Agora que a estrutura básica do seu documento HTML está pronta, seu supervisor pediu para adicionar um cabeçalho e um parágrafo ao corpo do documento. Use as tags ```<h1>``` para o cabeçalho e ```<p>``` para o parágrafo. Escolha um tema para o cabeçalho e escreva um breve parágrafo relacionado a esse tema.
-
-```ruby
-<!DOCTYPE html>
-<html>
+2) Estruturando a página com tags semânticas
+Agora que você entende a importância das tags semânticas no HTML, é hora de aplicar esse conhecimento. Utilize as tags header, main, e footer para estruturar sua página de portfólio. No header, insira um menu ou um logotipo. No main, adicione os elementos do portfólio como título, parágrafo, botões e imagem. Por fim, no footer, coloque informações como contato ou direitos autorais. Lembre-se de que cada elemento deve ser colocado de forma lógica e estruturada para criar um site acessível e bem organizado.
+    ```ruby
+    <!DOCTYPE html>
+    <html lang="pt-br">
     <head>
-        <title>Desenvolvimento Web</title>
+        <title>Portfolio do Flavio Santana<title>
     </head>
     <body>
-        <h1>Páginas da Web</h1>
-        <p>Para criar páginas da web, devemos começar fazendo a estrutura básica do código HTML.<p>
+        <header>
+            <img src="logo.png">
+        </header>
+        <main>
+            <h1>Portfolio do Flavio Santana</strong></h1>
+            <p>Olá! Sou Flávio Santana, desenvolvedor Front-end</p>
+            <button>LinkedIn</button>
+            <abutton>GitHub<button>
+            <img src="imagem.png" alt="Foto no estilo selfie do Flávio Santana">
+        </main>
+        <footer>
+            Site desenvolvido por Flavio Santana
+        </footer>
     </body>
-</html>
-```
+    </html>
+    ```
 
-3) Trabalhando com meta tags e título
-Você precisa otimizar a seção ```<head>``` da página HTML existente. Adicione uma meta tag para definir a codificação de caracteres como UTF-8 e altere o título da página para algo mais descritivo e apropriado para o conteúdo do site.
-
-```ruby
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Aprendendo HTML</title>
-    </head>
-    <body>
-        <h1>Páginas da Web</h1>
-        <p>Para criar páginas da web, devemos começar fazendo a estrutura básica do código HTML.<p>
-    </body>
-</html>
-```
-
-4) Organizando conteúdo com tags HTML
-Você está desenvolvendo a página inicial de um site para um projeto pessoal. Você precisa criar um título principal e um subtítulo, seguidos por um breve parágrafo explicativo. Utilize HTML para estruturar esses elementos. Crie um arquivo HTML e adicione um título principal com a tag ```<h1>```, um subtítulo com a tag ```<h2>```, e um parágrafo com a tag ```<p>```. Use textos de sua escolha para cada um destes. Lembre-se de seguir a hierarquia correta das tags e verificar o resultado no navegador.
-
-```ruby
-<!DOCTYPE html>
-<html>
+3) Entendendo e aplicando as tags meta
+Explore o uso das tags meta no cabeçalho do seu HTML. Altere a tag lang para "pt-br", ajuste o charset para "UTF-8", adicione a tag meta para compatibilidade com o Edge e outra para configuração do viewport. Por fim, mude o título da sua página para algo relacionado ao seu projeto, por exemplo, "Portfólio de [Seu Nome]". Entenda como cada uma dessas mudanças afeta a funcionalidade e a acessibilidade do seu site.
+    ```ruby
+    <!DOCTYPE html>
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Meu Projeto</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio de Flavio Santana</title>
     </head>
     <body>
-        <h1>Meu Projeto Pessoal</h1>
-        <h2>Introdução do Projeto</h2>
-        <p>O projeto foi desenvolvido...<p>
+        <!-- Estrutura da página -->
     </body>
-</html>
-```
+    </html>
+    ```
 
-5) Adicionando imagens com acessibilidade
-Neste desafio, você vai adicionar uma imagem ao seu projeto de site pessoal. Escolha uma imagem de sua preferência (pode ser um logo ou uma foto relacionada ao tema do site). Utilize a tag ```<img>``` para inserir a imagem no corpo do documento HTML, e não se esqueça de incluir o atributo alt para descrever a imagem, melhorando a acessibilidade do site. Verifique o resultado no navegador.
-
-```ruby
-<!DOCTYPE html>
-<html>
+4) Inserindo e formatando elementos no HTML
+Agora que você já tem uma base sólida sobre a estrutura HTML, vamos adicionar e formatar elementos na sua página de portfólio. Siga o layout do Figma e comece adicionando um título (```<h1>```) com um destaque (```<strong>```) em uma parte dele. Em seguida, insira um parágrafo (```<p>```) com uma breve introdução sobre você ou sua empresa. Finalmente, adicione links (```<a>```) para suas redes sociais ou portfólios online, como Instagram e GitHub. Certifique-se de que cada elemento esteja corretamente formatado e colocado conforme o design do Figma.
+    ```ruby
+    <!DOCTYPE html>
+    <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Meu Projeto</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
     </head>
     <body>
-        <h1>Meu Projeto Pessoal</h1>
-        <h2>Introdução do Projeto</h2>
-        <img src="imagem.png" alt="Imagem do Projeto">
-        <p>O projeto foi desenvolvido...<p>
+        <header></header>
+        <main>
+            <h1>Eleve seu negócio digital a outro nível <strong>com um Front-end de qualidade!</strong></h1>
+            <p>Olá! Sou Flávio Santana, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <a href="https://linkedin.com/in/flavioafsantana">LinkedIn</a>
+            <a href="https://github.com/flavioafsantana">GitHub</a>
+            <img src="imagem.png" alt="Foto no estilo selfie do Flávio Santana">
+        </main>
+        <footer></footer>
     </body>
-</html>
-```
+    </html>
+    ```
 
-6) Listando Itens em HTML
-Agora, adicione uma lista de itens ao seu site. Esta lista pode ser de características do projeto, etapas de desenvolvimento, ou qualquer outra informação relevante. Utilize a tag ```<ul>``` para uma lista não ordenada ou ```<ol>``` para uma lista ordenada, e ```<li>```para cada item da lista. Verifique o layout no navegador após a inserção.
-
-```ruby
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Meu Projeto</title>
-    </head>
-    <body>
-        <h1>Meu Projeto Pessoal</h1>
-        <h2>Introdução do Projeto</h2>
-        <img src="imagem.png" alt="Imagem do Projeto">
-        <p>O projeto foi desenvolvido...<p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-    </body>
-</html>
-```
+5) Incorporando imagens com tags HTML
+Chegou a hora de dar um toque visual à sua página! Escolha uma imagem que represente você ou seu trabalho e adicione-a à sua página de portfólio usando a tag <img>. Lembre-se de incluir a propriedade src com o caminho para a imagem e alt com uma descrição adequada da imagem. Isso não apenas melhora a acessibilidade do seu site, mas também ajuda os motores de busca a entenderem o conteúdo da imagem.
+    ```ruby
+    <img src="imagem.png" alt="Pessoa desenvolvendo">
+    ```
